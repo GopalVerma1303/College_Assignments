@@ -36,11 +36,14 @@ for i in range(4, 0, -1):
  
 #Ans5: 
 value = 65
-for i in range(0, 5):
+n = int(input("Enter the number of rows: "))
+for i in range(0, n):
     for j in range(0, i+1):
         ch = chr(value)
         print(ch, end=" ")
         value = value + 1
+        if(value==91):
+            value = 65
     print()
  
 #Ans6:
